@@ -1,7 +1,7 @@
 import azure.functions as func
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-
+#Sentiment intentsity analyzer
 def main(req: func.HttpRequest) -> func.HttpResponse:
     analyzer = SentimentIntensityAnalyzer()
     text = req.params.get("text")
